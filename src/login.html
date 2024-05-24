@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-3 Request Api data render</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-[#EEF2F5]">
+    <div
+      class="w-[450px] h-[550px] m-auto mt-20 p-10 bg-white rounded-md text-black relative js-logon-page"
+    >
+      <h1 class="text-xl font-bold">Back to your digital life</h1>
+      <span class="text-sm">Choose one of the option to go</span>
+
+      <form class="js-login-form" method="POST">
+        <input
+          class="mt-12 mb-4 border p-3 rounded-md pl-6 w-full js-email-inp"
+          type="email"
+          placeholder="Email address"
+          aria-label="Email address"
+          name="user_email"
+          value="eve.holt@reqres.in"
+          required
+        />
+        <div class="relative flex items-center">
+          <input
+            class="border p-3 rounded-md pl-6 w-full js-password-inp"
+            type="Password"
+            placeholder="Password"
+            aria-label="Password"
+            value="cityslicka"
+            required
+          />
+          <i
+            class="fa-regular fa-eye absolute right-3 hover:cursor-pointer js-open-eye"
+          ></i>
+        </div>
+        <div class="flex items-center justify-between mt-12">
+          <span class="text-sm opacity-60">Or continue with</span>
+          <img class="w-[70%]" src="./images/line.png" alt="line img" />
+        </div>
+        <ul class="mt-8 mb-9 flex items-center justify-around">
+          <li>
+            <a
+              class="inline-block w-24 bg-[#F7F7F7] p-[6px] rounded-md"
+              href="https://www.google.com/"
+              target="_blank"
+              ><img
+                class="w-10 m-auto"
+                src="./images/google.png"
+                alt="google icons"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="inline-block w-24 bg-[#F7F7F7] p-3 rounded-md"
+              href="#"
+              target="_blank"
+              ><img
+                class="w-10 m-auto"
+                src="./images/sharami.png"
+                alt="google icons"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="inline-block w-24 bg-[#F7F7F7] p-3 rounded-md"
+              href="https://www.apple.com/"
+              target="_blank"
+              ><img
+                class="w-8 m-auto"
+                src="./images/apple.png"
+                alt="google icons"
+            /></a>
+          </li>
+        </ul>
+        <button
+          class="w-60 m-auto p-3 rounded-md block bg-blue-600 text-white"
+          type="submit"
+        >
+          Log in
+        </button>
+      </form>
+
+      <button
+        class="absolute top-0 right-0 p-[3px] pl-4 pr-4 bg-[#FF0000] text-white rounded-bl js-login-page-back"
+        type="button"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

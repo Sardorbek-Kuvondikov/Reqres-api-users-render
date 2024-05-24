@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users render list</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div class="p-6 text-center bg-slate-400 text-white">
+      <h1 class="text-2xl font-semibold">Users List Render</h1>
+    </div>
+    <div class="pl-5 pr-5">
+      <button class="mt-3 text-blue-600 font-medium text-xl js-back-btn">
+        <i class="fa-solid fa-angle-left text-blue-500"></i>
+        back
+      </button>
+      <ul
+        class="flex items-center justify-center gap-8 mt-7 flex-wrap js-users-render-list"
+      ></ul>
+    </div>
+
+    <template class="js-template">
+      <li class="relative border w-[200px] rounded-sm p-2">
+        <img
+          class="w-full js-user-img"
+          src="https://reqres.in/img/faces/1-image.jpg"
+          alt=""
+        />
+        <h3 class="font-semibold text-[18px] mt-2 js-user-first-name"></h3>
+        <a class="text-blue-600 font-medium js-user-email" href="#"></a>
+        <span
+          class="absolute top-2 left-2 bg-slate-500 text-white pl-2 pr-2 rounded-sm js-user-id"
+        ></span>
+      </li>
+    </template>
+    <script src="./main.js"></script>
+  </body>
+</html>
