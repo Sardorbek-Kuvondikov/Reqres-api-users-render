@@ -1,7 +1,7 @@
 const dataToken = JSON.parse(window.localStorage.getItem("token"));
 
 if (!dataToken) {
-  window.location.pathname = "./src/login.html";
+  window.location.pathname = "./login.html";
 }
 
 const elBackBtn = document.querySelector(".js-back-btn");

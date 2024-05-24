@@ -10,7 +10,7 @@ const elLoginForm = document.querySelector(".js-login-form"),
 const dataToken = JSON.parse(window.localStorage.getItem("token"));
 
 if (dataToken) {
-  window.location.pathname = "./src/index.html";
+  window.location.pathname = "./index.html";
 }
 
 async function loginPost(emailValue, passwordValue) {
@@ -30,7 +30,7 @@ async function loginPost(emailValue, passwordValue) {
     window.localStorage.setItem("token", JSON.stringify(data.token));
 
     if (data.token) {
-      window.location.pathname = "./src/index.html";
+      window.location.pathname = "./index.html";
     }
   } catch (error) {
     console.log(error);
